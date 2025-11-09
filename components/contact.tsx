@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Send } from "lucide-react"
+import { Mail, Linkedin, Github } from "lucide-react"
 
 export function Contact() {
   return (
@@ -9,7 +9,7 @@ export function Contact() {
           <p className="text-lg text-muted-foreground">I'm always open to new opportunities and collaborations</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
@@ -59,41 +59,6 @@ export function Contact() {
                 </a>
               </div>
             </div>
-          </div>
-
-          {/* Quick Message */}
-          <div className="bg-background p-8 rounded-lg border border-border">
-            <h3 className="text-xl font-bold text-primary mb-6">Send a Message</h3>
-            <form className="space-y-4">
-              <div>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                />
-              </div>
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
-                />
-              </div>
-              <div>
-                <textarea
-                  placeholder="Your Message"
-                  rows={4}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full px-6 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:bg-accent/90 transition-colors flex items-center justify-center gap-2"
-              >
-                <Send size={20} />
-                Send Message
-              </button>
-            </form>
           </div>
         </div>
 
